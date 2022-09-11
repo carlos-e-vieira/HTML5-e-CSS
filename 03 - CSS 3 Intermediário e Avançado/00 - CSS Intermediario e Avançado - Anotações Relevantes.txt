@@ -1,0 +1,110 @@
+MAIS SOBRE SELETORES
+	Varirios tipos de seletores estão no PDF seletores esquema
+
+
+HERANÇA E ESPECIFIDADES
+	Seletores iguais, exceção import
+	#pagina p{
+		color: blue !important; 
+	}
+
+	#pagina p{
+		color: red;
+	}
+
+	Se um seletor for mais especifico que o outro a regra mais especifica será aplicada (terá precedência sobre as regras mais gerais), resumindo, ele será aplicado antes, ex:
+	*{
+		color: red;
+	}
+
+	h2 { /* Terceiro a ser aplicado */
+		color: blue;
+	}
+
+	h2.verde{ /* Segundo a ser aplicado */
+		color: green;
+	}
+
+ 	h2#amarelo{ /* Primeiro a ser aplicado */
+		color: yellow;
+	}
+
+
+BARRA DE NAVEGAÇÃO VERTICAL
+	O list-style-type: none; remove os marcadores da lista
+	O text-indent: 40px; alinha a largura do texto com base no container
+	O line-height: 40px; alinha o texto com a altura do container
+
+
+LAYOYT FIXO
+	È o layout que tem um tamanho fixo, ao diminuir o navegar ele criar uma barra scrool horizontal, layout todo em px.
+
+
+LAYOUT LIQUIDO / FLUIDO
+	Layout feito em porcentagem, esse layout é feito para acompanhar o tamanho do navegador, ele não é responsivo.
+	A propriedade min-width: 720px; , define uma largura minima.
+	A propriedade max-width: 1280px; , define uma largura maximo.
+
+
+IMAGEM LIQUIDA
+	Imagem usa porcentagem nas medidas
+	A propriedade overflow: hidden; esconde o resto da imagem que ultrapassa o container
+
+
+ESTILIZANDO TABELAS
+	Por padrão, preços de uma tabela devem ser alinhados a direita.
+	A propriedade border-collapse: collapse; , tira os espaços padrão da tabela.
+	A propriedade text-transform: uppercase; , deixa todas as letras maiusculas.
+	A propriedade letter-spacing: 0.1em; , aumenta o espaçamento entre as letras
+	Criar um efeito hover quando passa o mouse sobre uma linha da table, o hover pode ser aplicados em varios componentes, h2 e outros,  ex:
+		tr:hover{
+			background-color: #c3e6e5;
+		}
+
+
+FORMULÁRIOS ESTILIZADOS
+	A tag html <fieldset></fieldset> é utilizada para agrupar dados semelhantes
+	Dentro do  <fieldset>  podemos usar uma legenda como titulo usando a tag <legend> </legend>
+	A propriedade css cursor: pointer; cria um efeito de mão no mouse quando é passado em cima do item
+	A propriedade cursor: progress; cria um efeito de loading no maouse quando é passado em cima do item
+	Dentro do cochetes, podemos defirnir um item espicifico do form para ser configurado, input[type="text"] 
+
+
+FORMUÇÁRIO DE AUTENTICAÇÃO
+	O atributo da prorpiedade de cor rgba(255, 255, 255, 0.3); define o ultimo parametro com a transparencia
+	A propriedade border-radius: 10px; aplica um aredondamento no atributo ou container
+	A tag html placeholder="Digite seu email"  mostra um texto dentro do input do form
+	A propriedade  background: linear-gradient(to bottom, #faa600, #f68a00);  cria um degrade
+
+
+PROJETO 4 - NOTÍCIAS CIDADE
+	Podemos usar um <h1> pra carregar um logo, no h1 colocaremos uma class .logo e na class logo faremos a configuração do logo, ex:
+	.logo{
+		width: 152px;
+		height: 66px;
+		background: url("../imagens/logo.png") no-repeat center;
+		text-indent: -4000px;
+	}
+
+	A propriedade text-indent: -4000px; empurra o texto h1 do logo para o lado, assim deixa só a imagem visivel
+	A prorpiedade margin: 0 auto; alinha o contaner no centro da página
+
+
+PARALLAX
+	A propriedade opacity: 0.9; aplica um efeito de opacidade na imagem;
+	A propriedade background-size: cover; faz uma imagem preencher todo o espaço do container;
+	A propriedade background-position: center; sempre deixa a imagem centralizada;
+	A propriedade background-attachment: fixed; deixa a imagem sempre fixa;
+	A propriedade letter-spacing: 5px; aplica um espaçamento entre as letras;
+	
+	
+FONTES CUSTOMIZADAS
+	No site https://transfonter.org/  podemos converter fontes para usar em uma página para a web;
+	A propriedade @font-face faz o css reconhecer uma fonte customizada;
+	A propriedade src: url("../fontes/RoadRage.woff"); indica o caminho do destino da fonte woff;
+	@font-face{
+		font-family: "Road Rage";
+		src: url("../fontes/RoadRage.woff");
+	}
+
+	
