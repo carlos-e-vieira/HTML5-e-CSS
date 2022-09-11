@@ -1,0 +1,9 @@
+.texto{
+	color: white;
+	background: orange;
+	}
+
+body{
+	background: yellow url('imagens/yoshi.png') fixed no-repeat top center;
+
+}

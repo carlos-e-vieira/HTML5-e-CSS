@@ -1,0 +1,21 @@
+a{
+	padding: 20px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+/* Links não visitados*/
+a:link, a:visited{
+	color: #b9c941;
+}
+
+/* Links hover, passar o cursos sobre o link*/
+a:hover{
+	color: #fff;
+	background: #6d790f;
+}
+
+/* Links Ativos, quando clicados*/
+a:active{
+	color: #e4f371;
+}

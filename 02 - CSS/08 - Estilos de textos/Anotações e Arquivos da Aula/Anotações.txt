@@ -1,0 +1,2 @@
+Link útel para estilos de textos
+	https://www.w3schools.com/cssref/pr_font_font.asp

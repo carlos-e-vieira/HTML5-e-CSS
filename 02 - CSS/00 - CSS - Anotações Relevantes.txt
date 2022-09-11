@@ -1,0 +1,164 @@
+SELETORES
+	Cria um formatação para elementos do html, ex:
+	p { 
+		color: red;
+		font-size: 16px;
+	}
+
+
+CLASS
+	As class (.class) são utilizadas para aplicar formatações em varios componentes, ex:
+	.coluna{
+		border: 2; border-color: red;
+	}
+
+
+ID
+	Aplica uma formatação fixa, por exempolo, div top, div menu, rodape, ex:
+	#topo {
+		background: blue;
+	}
+
+
+BORDER
+	Borda com 3 atributos - primeiro px, segundo estilo, terceiro color
+	border: 15px outset red;
+
+	border-color: red yellow green blue;
+	border-width: 15px 10px 8px 3px;
+	border-style: solid;
+
+
+TAMANHOS DE TEXTOS
+	px -> tamanho fixo
+	% -> tamanho relativo ao tamanho padrão dos navegadores
+	em ->tamanho relativo ao container pai
+
+
+TEXT
+	Ordem dos elementos
+	font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;*/
+
+
+BACKGROUND
+	background-image: url('imagens/yoshi.png');
+	
+	repeat-x, repeat-y, no-repeat, repeat
+	background-repeat: no-repeat;
+
+	scroll, fixed
+	background-attachment: fixed;
+
+	
+	primeiro valor: left, center, right
+	segundo valor: top, center, bottom
+	background-position: right center;
+
+	background: blue url('imagens/yoshi.png') no-repeat scroll center top;
+
+
+PADDING
+	primeiro valor - topo(top)
+	segundo valor - direita(right)
+	terceiro valor - rodape(bottom)
+	quarto valor - esquerda(left)
+	SEMPRE NO SENTIDO HORÁRIO
+	
+	padding: 20px 15px 10px 5px;
+
+
+MARGIN
+	primeiro valor - topo(top)
+	segundo valor - direita(right)
+	terceiro valor - rodape(bottom)
+	quarto valor - esquerda(left)
+	SEMPRE NO SENTIDO HORÁRIO
+	
+	margin: 20px 20px 20px 20px;
+
+
+ELEMENTOS FLUTUANTES
+	O float pode ser utilizado para alinhar elementos na mesma linha, ex:
+	float: right;
+
+	O clear limpa o fluxo flutuante do item, ele breca o float, ex:
+	clear: both;
+
+INLINE BLOCK E INLINE-BLOCK
+	O h1, p, div, table por padrão são um elementos BLOCK (ocupa toda linha), mas podemos deixa varios h1 na mesma linha, ex:
+	display: inline;
+
+	O span, a, img por padrão são um elementos INLINE (um do lado do outro), mas podemos deixar eles como BLOCK, ex:
+	display: block;
+
+	O inline-block deixa os elementos um ao lado do outro enqunto cabe, e depois quebra a linha automaticamente, ex:
+	display: inline-block;
+
+
+POSITION RELATIVE
+	O position: relative; desloca o componente com base nas configurações aplicadas, ex:
+	Pedemos usar valores negativos.
+	position: relative;
+	/* posições - top, reght, bottom, left*/
+	top: 20px;
+	left: 80px;
+
+	
+
+POSITION ABSOLUTE
+	O position: absolute; não interefe no posicionamento dos outros elementos, esse alinhamento é baseado no container que tem o position não static, absolute acompanha o posicionamento da página, 
+	border: 2px solid red;
+	background: #f2f2f2;
+	position: absolute;
+	top: 80px;
+	right: 80px;
+
+
+POSITION FIXED
+	O position: fixed, deixa o elemento fixo, muito bom para menus, botão WhatsApp, redes sociais, chat, ele não rola com a página, baseado na tela do navegador, ex:
+	border: 2px solid red;
+	background: #f2f2f2;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+
+SOBREPOR ELEMENTOS
+	A propriedade z-index: 1; sobrepoem o elemento com o menor numero, se o z-index tiver o mesmo valor, se aplicará a ordem dos elementos, o z-index é chamado de CONTEXTO DE EMPILHAMENTO, ex:
+	z-index: 1;
+
+FORMATANDO LINKS
+	Primeiro estado é links não visitados, segundo links visitado, terceiro hover, efeito de passa o mouse sobre o link, ultimo estado é links clicados, ex:
+	/* Links não visitados*/
+	a:link{
+		color: #b9c941;
+	}
+
+	/* Links visitados*/
+	a:visited{
+		color: #b9c941;
+	}
+
+	/* Links hover, passar o cursos sobre o link*/
+	a:hover{
+		color: #fff;
+		background: #6d790f;
+	}
+
+	/* Links Ativos, quando clicados*/
+	a:active{
+		color: #e4f371;
+	}
+
+	Podemos definir 2 atributos com o mesmo valor, ex:
+	a:link, a:visited{
+		color: #b9c941;
+	}
+
+
+LIMPAR AS FORMATAÇÕES PADRÕES
+	O * se refere a todos os elementos da página
+	*{
+		margin: 0;
+		padding: 0;
+	}
