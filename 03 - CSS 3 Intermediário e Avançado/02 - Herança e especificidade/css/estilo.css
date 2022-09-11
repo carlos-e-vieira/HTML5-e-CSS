@@ -1,0 +1,27 @@
+/* Seletores iguais, exceção import 
+#pagina p{
+	color: blue !important; 
+}
+
+#pagina p{
+	color: red;
+}*/
+
+/*Se um seletor for mais especifico que o outro a regra mais especifica
+ será aplicada (terá precedência sobre as regras mais gerais)*/
+
+ *{
+ 	color: red;
+ }
+
+ h2 { /* Terceiro a ser aplicado */
+ 	color: blue;
+ }
+
+ h2.verde{ /* Segundo a ser aplicado */
+ 	color: green;
+ }
+
+ h2#amarelo{ /* Primeiro a ser aplicado */
+ 	color: yellow;
+ }
