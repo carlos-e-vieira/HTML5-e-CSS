@@ -1,0 +1,16 @@
+TAG <strong> - Usada para deixar o texto em negrito - strong ( forte )
+	<strong> negrito </strong>
+
+
+TAG <em> - Usada para deixar o texto em itálico - em (enfase)
+	<em> itálico </em>
+
+
+TAG <u> - Usada para inser um underline no texto
+	<u> underline </u>
+
+
+TAG <strike> - Usada para mostrar que o texto está errado - strike ( greve )
+	<strike> errado </strike>
+
+

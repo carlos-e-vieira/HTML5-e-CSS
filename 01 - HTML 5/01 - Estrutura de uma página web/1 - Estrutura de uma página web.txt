@@ -1,0 +1,31 @@
+Comentários em HTML
+	<!-- -->
+
+
+Abertura de tag que define que o documento é um HTML 5
+	<!DOCTYPE html>
+
+
+HTML - Criar a tag de inicialização do HTML
+	<html>   </html>
+
+
+HEAD - Primeira estrutura principal dentro do <html>
+Dentro do head podemos colocar estruturas de formatação, códigos JavaScript
+	<head>   </head>
+
+
+BODY - Segunda estrutura principal dentro do html
+Todas as informações que aparecem para o usuario fica dentro do body
+	<body>   </body>
+
+
+TITLE - Configura o titulo da página html dentro do <head>
+	<title>Meu site</title>
+
+
+META - Tag para definir acentuações, colocada dentro do <head>
+O atributo charset permite acentuações
+	<meta charset="utf-8">
+
+

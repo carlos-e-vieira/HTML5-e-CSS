@@ -1,0 +1,77 @@
+TAG <ul> </ul> - Lista não ordenada, pode ser usada para criar menus - ul é umordered list ( lista não ordenada )
+A tag <li> </li> é usada para marcar os itens - li é item da lista
+	<h2>Produtos</h2>
+	<ul>
+		<li>Carro</li>
+		<li>Barco</li>
+	</ul>
+
+
+TAG <ul type=""> - O atributo type de ul muda o tipo de marcador dos itens da lista
+	<!-- circle(circulo) -->
+	<h2>Produtos</h2>
+	<ul type="circle">
+		<li>Carro</li>
+		<li>Barco</li>
+	</ul>
+
+	<!-- square(quadrado) -->
+	<h2>Produtos</h2>
+	<ul type="square">
+		<li>Carro</li>
+		<li>Barco</li>
+	</ul>
+
+	<!-- disc(circulo preenchido) -->
+		<h2>Produtos</h2>
+		<ul type="disc">
+		<li>Carro</li>
+		<li>Barco</li>
+	</ul>
+
+
+TAG <ol> </ol> - A lista ordenada tem um marcador de numeração - ol é ordered list ( lista ordenada )
+	<h2>Perguntas</h2>
+	<ol>
+		<li>Comida favorita?</li>
+		<li>Série favorita?</li>
+	</ol>
+
+
+TAG <ol type=""> - O atributo type de ol muda o tipo de valores do item da lista
+	<!-- A - lista de A á Z maiucsulas -->
+	<ol type="A">
+		<li>Comida favorita?</li>
+		<li>Série favorita?</li>
+		<li>Cor favorita?</li>
+	</ol>
+
+	<!-- a - lista de a á z minusculas -->
+	<ol type="a">
+		<li>Comida favorita?</li>
+		<li>Série favorita?</li>
+		<li>Cor favorita?</li>
+	</ol>
+
+	<!-- 1 - lista numérica padrão-->
+	<ol type="1">
+		<li>Comida favorita?</li>
+		<li>Série favorita?</li>
+		<li>Cor favorita?</li>
+	</ol>
+
+	<!-- I maiusculo cria lista de algoritimos romanos maiuscula -->
+	<ol type="I">
+		<li>Comida favorita?</li>
+		<li>Série favorita?</li>
+		<li>Cor favorita?</li>
+	</ol>
+
+	<!-- i minusculo cria lista de algoritimos romanos minuscula-->
+	<ol type="i">
+		<li>Comida favorita?</li>
+		<li>Série favorita?</li>
+		<li>Cor favorita?</li>
+	</ol>
+
+	

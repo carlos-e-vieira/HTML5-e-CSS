@@ -1,0 +1,8 @@
+TAG <p></p> - A tag p é usada para configurar um parágrafo, separa paragráfos com espaçamento, diferente de <br> que apenas quebra a linha sem espaçamento, ex:
+	<p>Essa é uma empresa tal...</p>
+
+
+TAG <hr> - Tag usada para criar uma linha horizontal  hr do ingle é horizontal rule ( regra horizontal )
+	<p>Lorem ipsum dolor sit amet</p>
+	<hr>
+	<p>Lorem ipsum dolor sit amet</p>

@@ -1,0 +1,12 @@
+TAGS - Existem tags que não precisam de um fechamento convencional, ex:
+	<meta charset="utf-8">
+
+
+TAGS <h1> </h1>- Tags de cabeçalho, usuadas para formatar titulos, vai do h1 até o h6 - h do ingles header (cabeçalho)
+	<h1> Sobre a empresa </h1>
+	Essa é uma empresa tal...
+
+
+TAG <br> - A tag <br> é usada para quebra de linha - br do ingles é break (quebrar)
+	Sobre a empresa <br>
+	Essa é uma empresa tal...
