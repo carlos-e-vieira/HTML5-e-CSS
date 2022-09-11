@@ -1,0 +1,344 @@
+/* RESET */
+
+/*o* representa todos os elementos da pagina*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%; /*usar as fontes com unidade relativa -> rem*/
+	box-sizing: border-box; /*evita problemas com os padings*/
+	font-family: "Open Sans", sans-serif;
+}
+
+nav, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer; /*altera a seta do mouse*/
+	opacity: 0.9; /*deixa os links mais claros*/
+}
+
+a:hover {
+	opacity: 1; /*faz o efeito para o link ficar mais escuro*/
+}
+
+
+/* HEADER */
+header {
+	/*background-color: red; para debugar*/
+	width: 100%;
+	position: absolute; /*o header vai ficar por cima do efeito hero*/
+	top: 0; /*espaçamento para o position absolute*/
+	left: 0; /*espaçamento para o position absolute*/
+	display: flex; /*criando o alinhamento com o flexbox*/
+	justify-content: space-between; /*cria um espaçamento horizontal entre os itens (sem nos cantos)*/
+	align-items: center; /*cria um espaçamento vertical entre os itens*/
+	padding: 20px 50px; /*padding de 20px no topo e na base e 50px nas laterais*/
+	background-color: #fff;
+}
+
+header img {
+	width: 200px; /*diminui o tamanho do logo*/
+}
+
+header nav {
+	display: flex; /*deixa a lista li em linha*/
+}
+
+header li a {
+	color: #191c03; /*altera a cor dos links*/
+}
+
+header li {
+	margin: 0 15px; /*adiciona uma margem na lateral das li*/
+}
+
+header li:first-child { /*manipula o primeiro elemento filho da li*/
+	margin-left: 0; /*retira a margen lateral da li HOME*/
+}
+
+header li:last-child { /*manipula o ultimo elemento filho da li*/
+	margin-right: 0; /*retira a margen lateral da li CONTATO*/
+}
+
+/*adicionando um break point para deixa o menu responsivo*/
+@media (max-width: 700px) {
+	/*quando o container atingir 700px, o menu vai pular para baixo*/
+	header {
+		flex-direction: column; /*deixa o header em coluna*/
+	}
+
+	header img {
+		margin-bottom: 15px; /*aplica uma margin inferior no logo*/
+	}
+}
+
+
+/* HERO */
+.hero {
+	background-image: url(img/hero.jpg);
+	background-size: cover;
+	min-height: 100vh; /*define a altura minima em 100 view port*/
+	color: #fff;
+	display: flex; /*criando o alinhamento com o flexbox*/
+	justify-content: center; /*alinhamento horizontal dos itens*/
+	align-items: center; /*alinhamento vertical dos itens*/
+	flex-direction: column; /*deixa os itens em coluna*/
+	text-align: center;  /*alinhamento dos textos*/
+}
+
+.hero h1 {
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+}
+
+.hero h3 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+
+/*Botão btn*/
+.hero .btn {
+	background-color: #fff;
+	border-radius: 4px;
+	color: #191c03;
+	padding: 20px 50px;
+	text-transform: uppercase;
+}
+
+/*adicionando um break point para deixa o hero responsivo*/
+@media (max-width:  700px) {
+	.hero h1 {
+		font-size: 2.5rem;
+	}
+
+	.hero h3 {
+		font-size: 1.5rem;
+	}
+}
+
+
+/* CONHEÇA O HOTEL */
+.conheca-o-hotel {
+	display: flex; /*trasnforma em container flex*/
+	flex-direction: column; /*deixa os itens em colunas*/
+	align-items: center; /*alinhamento horizontal*/
+	padding: 100px 50px; /*padding de 100px no topo e na base e 50px nas laterais*/
+}
+
+.conheca-o-hotel h3 {
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #191c03;
+	text-align: center;
+}
+
+.conheca-o-hotel p {
+	max-width: 800px; /*limita a largura do paragráfo*/
+	margin-bottom: 35px;
+	color: #191c03;
+	text-align: center;
+}
+
+.conheca-o-hotel hr {
+	width: 200px;
+	height: 2px;
+	background-color: #191c03;
+	margin-bottom: 70px;
+	border: none; /*retira as bordas*/
+}
+
+.conheca-o-hotel .grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap; /*permite a quebra de linha dos itens no container*/
+}
+
+.conheca-o-hotel .grid li {
+	height: 350px;
+	padding: 20px;
+	border-radius: 4px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.conheca-o-hotel .grid li.small {
+	flex-basis: 40%; /*FLEX-BASIS-> DEFINE A LARGURA INICIAL DE CADA ITEM - Classe para filhos*/
+}
+
+.conheca-o-hotel .grid li.large {
+	flex-basis: 60%; /*FLEX-BASIS-> DEFINE A LARGURA INICIAL DE CADA ITEM - Classe para filhos*/
+}
+
+
+/*adicionando um break point para deixa o conheça o hotel responsivo*/
+@media (max-width:  700px) {
+	.conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large {
+		flex-basis: 100%;
+	}
+}
+
+/* CARACTERISTICAS */
+.caracteristicas {
+	display: flex; /*trasnforma em container flex*/
+	flex-direction: column; /*deixa os itens em colunas*/
+	align-items: center; /*center ->  alinha os itens no centro na VERTICAL*/
+	padding: 100px 50px; /*padding de 100px no topo e na base e 50px nas laterais*/
+	background-color: #191c03;
+}
+
+.caracteristicas h3 {
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #fff;
+	text-align: center;
+}
+
+.caracteristicas p {
+	max-width: 800px; /*limita a largura do paragráfo*/
+	margin-bottom: 35px;
+	color: #fff;
+	text-align: center;
+}
+
+.caracteristicas hr {
+	width: 200px;
+	height: 2px;
+	background-color: #fff;
+	margin-bottom: 70px;
+	border: none; /*retira as bordas*/
+}
+
+.caracteristicas .grid {
+	width: 100%;
+	display: flex;
+}
+
+.caracteristicas .grid li {
+	padding: 0 30px;
+	text-align: center;
+}
+
+.caracteristicas .grid li i {
+	color: #c3c63b;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+.caracteristicas .grid li h4 {
+	font-size: 1.5rem;
+	color: #c3c63b;
+	margin-bottom: 30px;
+}
+
+.caracteristicas .grid li p {
+	color: #fff;
+}
+
+/*adicionando um break point para deixa as caracteriscas responsivo*/
+@media (max-width: 850px) {
+	.caracteristicas .grid {
+		flex-direction: column;
+	}
+}
+
+
+/* NEWSLETTER */
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+}
+
+.newsletter h3 {
+	font-size: 2rem;
+	margin-bottom: 35px;
+	color: #c3c63b;
+	text-align: center;
+}
+
+.newsletter p {
+	max-width: 800px; /*limita a largura do paragráfo*/
+	margin-bottom: 35px;
+	color: #c3c63b;
+	text-align: center;
+}
+
+.newsletter hr {
+	width: 200px;
+	height: 2px;
+	background-color: #c3c63b;
+	margin-bottom: 70px;
+	border: none; /*retira as bordas*/
+}
+
+.newsletter form {
+	display: flex;
+	align-items: center; /*center ->  alinha os itens no centro na VERTICAL*/
+	justify-content: center; /*center ->  alinha os itens no centro na HORIZONTAL*/
+	flex-wrap: wrap;
+	width: 80%;
+	max-width: 800px;
+}
+
+.newsletter input {
+	padding: 15px;
+	border: 1px solid #c3c63b;
+	border-radius: 4px;
+	margin-right: 15px;
+	flex: 1; /*fazer ocupar toda a largura disponivel*/
+}
+
+.newsletter button {
+	padding: 15px;
+	background-color: #c3c63b;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/*adicionar um break point*/
+@media (max-width: 700px) {
+	.newsletter input {
+		flex-basis: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+
+/* FOOTER */
+footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #191c03;
+	padding: 50px 0;
+}
+
+footer ul {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+footer ul li {
+	margin-right: 10px;
+}
+
+footer ul li:last-child {
+	margin-right: 0;
+}
+
+footer ul li a {
+	color: #c3c63b;
+	font-size: 2rem;
+}
+
+footer p {
+	color: #c3c63b;
+	text-align: center;
+}

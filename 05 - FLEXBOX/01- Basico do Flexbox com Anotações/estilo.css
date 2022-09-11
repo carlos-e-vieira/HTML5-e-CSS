@@ -1,0 +1,95 @@
+.container {
+	background-color: #ccc;
+	height: 500px;
+
+	/*DEFINE UM CONTAINER COMO FLEX*/
+	display: flex; 
+
+
+	/*FLEX-DIRECTION -> DEFINE A DIREÇÃO DOS ITENS*/
+	flex-direction: row;  /*row -> (valor padrão) deixa os itens em linha*/
+	/*flex-direction: column;  /*column -> define os itens como colunas*/
+	/*flex-direction: row-reverse;  /*row-reverse -> define os itens em linha de forma reversa*/
+	/*flex-direction: column-reverse;  /*column-reverse -> define os itens em coluna de forma reversa*/
+
+	
+	/*FLEX-WRAP -> DEFINE SE OS ITENS TERÃO UMA QUEBRA DE LINHA*/
+	flex-wrap: nowrap; /*nowrap -> não permite uma quebra de linha*/
+	/*flex-wrap: wrap; /*wrap -> permite uma quebra de linha dos itens*/
+	/*flex-wrap: wrap-reverse; /*wrap -> permite uma quebra de linha dos itens de forma reversa*/
+
+
+	/*flex-flow-> DEFINE DE FORMA RESUMIDA O flex-direction e o flex-wrap Juntos*/
+	/*flex-flow: row nowrap;
+
+
+	/*JUSTIFY-CONTENT -> DEFINE O ALINHAMENTO HORIZONTAL DOS ITENS*/
+	justify-content: flex-start;  /*flex-start -> (valor padrão) alinha os itens da esquerda pra direita*/
+	/*justify-content: flex-end;  /*flex-end -> alinha os itens da direita pra esquerda*/
+	/*justify-content: center;  /*center ->  alinha os itens no centro*/
+	/*justify-content: space-between;  /*space-between -> cria um espaçamento entre os itens (não da espaçamento nos cantos)*/
+	/*justify-content: space-around;  /*space-around -> cria um espaçamento entre os itens (com espaçamento nas estremidades)*/
+
+
+	/*ALIGN-ITENS -> DEFINE O ALINHAMENTO VERTICAL DOS ITENS*/
+	align-items: stretch; /*stretch -> (valor padrão) define que os itens cresçam igualmente*/
+	/*align-items: flex-start; /*flex-start -> alinha os itens no topo*/
+	/*align-items: flex-end; /*flex-end -> alinha os itens no final do container*/
+	/*align-items: center; /*center -> alinha os itens no centro*/
+	/*align-items: baseline; /*baseline -> alinha baseado no conteudo de cada item*/
+
+
+	/*ALIGN-CONTENT -> ALINHAMENTO VERTICAL QUANDO TIVER UMA QUEBRA DE LINHA NO CONTAINER*/
+	/*align-content: stretch; /*stretch -> (valor padrão) faz os itens crescer igualmente na vertical*/
+	align-content: flex-start; /*flex-start -> alinha no topo, mesmo com quebra de linha*/
+	/*align-content: flex-end; /*flex-end -> alinha no final, mesmo com quebra de linha*/
+	/*align-content: center; /*center -> alinha no centro, mesmo com quebra de linha*/
+	/*align-content: space-between; /*space-between -> adiciona um espaçamento, colando nas estremidades do container*/
+	/*align-content: space-around; /*space-around -> adiciona um espaçamento, incluindo o topo e o fim*/
+
+}
+
+.item {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	margin: 5px;
+	height: 30px;
+
+	/*FLEX-GROW -> DEFINE A LARGURA DOS ITENS BASEADO NO VALOR PASSADO*/
+	flex-grow: 1;
+
+	/*FLEX-SHRINK-> DEFINE A CAPACIDADE DE REDUÇÃO DO ITEM*/
+	flex-shrink: 1;
+
+	/*FLEX-BASIS-> DEFINE A LARGURA INICIAL DE CADA ITEM*/
+	flex-basis: 300px;
+
+
+	/*FLEX-> DEFINE AS 3 PROPRIEDADES NA MESMA LINHA - 1 flex-grow, 2 flex-shrink, 3 flex-basis*/
+	/*flex-shrink: 1 1 300px; /*1 flex-grow, 2 flex-shrink, 3 flex-basis*/
+}
+
+
+/*PROPRIEDADES PARA OS ITENS DO CONTAINER - FILHOS*/
+
+/*ODER: autera a ordem dos itens*/
+/*ALIGN-SELF: alinhamento individual do item*/
+.article-01{
+	order: 1;
+	align-self: auto;
+	flex-grow: 2; /*flex-grow -> no filho (item), definimos um valor diferente para aumentar*/
+}
+
+.article-02{
+	order: 2;
+	flex-shrink: 3; /*flex-grow -> no filho (item), definimos um valor diferente para diminuir*/
+}
+
+.article-03{
+	order: 4;
+}
+
+.article-04{
+	order: 3;
+}
