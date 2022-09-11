@@ -1,0 +1,26 @@
+
+#conteudo{
+	background: #dcdcdc;
+	height: 600px;
+	display: flex;
+
+	/*flex-direction: 
+	row|row-reverse|column|column-reverse|initial|inherit;*/
+	flex-direction: row;
+
+	/*flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;*/
+	flex-wrap: nowrap;
+
+	/*justify-content: 
+	flex-start|flex-end|center|space-between|space-around;*/
+	justify-content: space-around;
+
+	/*align-items: stretch|center|flex-start|flex-end|baseline;*/
+	align-items: baseline;
+}
+
+.item{
+	margin: 10px;
+	background: white;
+	border: 1px solid gray;
+}

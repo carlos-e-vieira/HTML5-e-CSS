@@ -1,0 +1,80 @@
+NORMALIZE
+	O normalize criar um padrão para todos os navegadores, ele não zera as configurações padrões, ele ajusta os componentes;
+	Link do normalize  https://necolas.github.io/normalize.css/
+
+
+BORDER RADIUS
+	A propriedade css  border-radius: 20px;  define arredondamentos para caixas em pixels, containers, etc.
+	Podemos usar a propriedade tambem em imagens de perfil areedondas.
+	É importante usar prefixos para as versões mais antigas de navegadores, veja exemplos:
+		Google Chrome= -webkit-border-radius: 10px 50px;
+		Monzila Firefox= -moz-border-radius: 10px 50px;
+
+
+BOX SIZING
+	Link w3 https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
+	A propriedade box-sizing: border-box;  tira o acrescimo de valor do padding dentro do container.
+
+
+TRANSPARÊNCIA
+
+	Link para tranparência= https://www.w3schools.com/css/css3_colors.asp
+	A propriedade background: rgba(255, 255, 255, 0.5); define uma cor rgb nos t3 primeiros parametros e a transparência no ultimo paramêtro.
+
+
+DEGRADÊS
+	Link para degradês= https://www.w3schools.com/css/css3_gradients.asp
+	O linear-gradient cria um gradiente em linha
+	A propriedade background: linear-gradient(red, green);  define um degrade no componete.
+	A propriedade background: linear-gradient(to left, red, green); faz o degrade começar da esquerda pra direita.
+	A propriedade background: linear-gradient(96deg, red, green); rotaciona o degrade em graus.
+
+	O radial-gradient cria um gradiente em circulo
+	A propriedade css background: radial-gradient(red, green, yellow); cria um degrade em circulo.
+
+
+SOMBRAS
+	Link sombras em texto= https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+	Link sombra em caixas https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+	A propriedade text-shadow: 20px 20px black; aplica uma sombra em textos. O primeiro parametro movimenta a sombra na horizontal, o segundo na vertical, e o terceiro paramentro define a cor da sombra.
+	A propriedade text-shadow: rgba(0,0,0,0.5); aplica uma transparência na sombra.
+	O terceiro paramentro da propriedade text-shadow: 10px 10px 5px rgba(0,0,0,0.5);  aplica um borramento na sombra.
+
+	A propriedade box-shadow: 20px 20px #000; aplica uma sombra em caixas (containers).
+	O quarto paramentro do código box-shadow: 20px 20px 2px 20px #000; espalha a sombra da caixa.
+
+
+ANIMAÇÕES
+	Link animações= https://www.w3schools.com/css/css3_animations.asp
+	Link direções= https://www.w3schools.com/cssref/css3_pr_animation-direction.asp
+	O comando css @keyframes é usado para criar uma animação.
+	A propriedade from{} dentro de @keyframes, inicia a animação.
+	A propriedade to{} dentro de @keyframe, finaliza a animação.
+	A propriedade animation-name: animacao-caixa; aplica a animação dentro de um id oo class.
+	A propriedade animation-duration: 5s;  determina o tempode duração da animação.
+	Código da animaçãp:
+	@keyframes animacao-caixa{
+		from{
+			background: red;
+			border-radius: 0px;
+		}
+		to{
+			background: yellow;
+			border-radius: 300px;
+		}
+	}
+
+	A propriedade animation-delay: 2s; faz a animaçã iniciar após os segundo definidos no paramentro.
+	A propriedade animation-iteration-count: 2; configura a quantidade de vezes  que a animação ieá execultar.
+	A propriedade animation-iteration-count: 2; altera a direção da execução da animação.
+	A propriedade animation-iteration-count: 2; inverte a execução da animação.
+	Podemos definir as propriedade das animações em paramentros como no exemple abaixo:
+		animation: animacao-caixa 5s 2s 2 alternate;
+
+
+TRANSIÇÕES
+	Link= https://www.w3schools.com/css/css3_transitions.asp
+	Aplicando o estado :hover em um id ou class, podemos usar transition como propriedade transition: width 3s, background 3s;
+	Podemos aplicar a propriedade transition: all 3s; e definir a duração para todas as propriedades
+	
+	

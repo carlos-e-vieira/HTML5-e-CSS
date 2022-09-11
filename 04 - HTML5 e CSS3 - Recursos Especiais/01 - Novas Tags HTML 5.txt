@@ -1,0 +1,108 @@
+HEADER
+	A tag <header> é usada para configurar o cabeçalho, e no css podemos configurar o header{} diretamente
+	
+
+NAV
+	A tag <nav> é usada para configurar a navegação, e no css podemos configurar o nav{} diretamente
+
+
+FOOTER
+	A tag <footer> é usada para configurar a footer, e no css podemos configurar o footer{} diretamente
+
+ARTICLE
+	A tag <article> é usada para configurar artigos, postagem, enfim, conteudo em geral
+
+
+SECTION
+	A tag <section> é usada para criar seções dentro do <article> (conteudo do site)
+
+
+TIME
+	A tag <time> é usada para configurar datas e horas
+
+
+ASIDE
+	A tag <aside> é usada para configurar a lateral do site
+
+
+COMPATIBILIDADES HTML 5
+	Link= https://github.com/aFarkas/html5shiv
+	Colar dentro do HEAD o código abaixo para os navegadores antigos entender as novas tags html 5
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+	Salvas o arquivo html5shiv.js dentro da pasta js no raiz do projeto
+
+
+NOVAS TAGS DE INPUT HTML 5
+	INPUT TEXT
+	A tags <label for="nome">Nome</label>  <input type="text" name="nome"> cria um input simples (label em uma linha e imput em outra)
+	
+	INPUT EMAIL
+	As tags <label for="email">Email</label>  <input type="email" id="email" required autofocus> cria um input para email
+	O atributo  required  faz o campo ter o preenchimento obrigatório
+	O atributo  autofocus  indica automaticamente o primeiro campo a ser preenchido
+	
+	INPUT NUMBER
+	As tags <label for="numero">Número</label>  <input type="number" id="numero" min="1" max="20" step="5"> cria um input para numeros
+	Os atributos min="" e max="" definem numeros para o começo e o fim do input, e o atributo step="5" faz o campo pular numeros definidos dentro do step, neste exemplo os numeros pulam de 5 em 5
+
+	INPUT URL
+	As tags <label for="url">Url</label>   <input type="url" id="url" placeholder="ex: http://www..."> criam um input para url
+	O atributo  placeholder  cria um texto de exemplo dentro do input
+
+	INPUT SEARCH
+	<label for="pesquisa">Pesquisa</label>   <input type="search" id="pesquisa" placeholder="ex: carlos">  cria um input de pesquisa
+
+	INPUT RANGE
+	As tags <label for="range">Range</label>   <input type="range" id="range" min="1" max="10" value="5">  cria uma barra com marcador
+	Os atributos min="" e max="" definem numeros para o começo e o fim do input, e o atributo value=""  define automaticamente o ponto incial do marcador
+
+	INPUT DATE
+	As tags  <label for="data">Data</label>   <input type="date" id="data">  criam um input personalizado para datas
+	
+	INPUT COLOR
+	As tags  <label for="cor">Cor</label>  <input type="color" id="cor">  cria uma paleta de cores
+
+
+FLEXBOX - CONTAINER
+	A propriedade display: flex; cria itens flexisiveis.
+
+	FLEX-DIRECTION
+	Link flex-direction= https://www.w3schools.com/cssref/css3_pr_flex-direction.asp
+	Atributos do flex-direction: row|row-reverse|column|column-reverse|initial|inherit;
+	A propriedade flex-direction: row;  define o alinhamento dos elementos (flex itens).
+	
+	FLEX-WRAP
+	Link flex-wrap= https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp
+	Atributos do flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;
+	A propriedade flex-wrap: wrap;  define se os itens dentro do container irão quebrar para a próxima linha.
+
+	JUSTIFY-CONTENT
+	Link justify-content= https://www.w3schools.com/cssref/css3_pr_justify-content.asp
+	Atributos justify-content: flex-start|flex-end|center|space-between|space-around;
+	A propriedade justify-content: flex-start;  define a distribuição de conteudo, como uma galeria de imagens, esse recurso pode substituir as margens e paddings
+	
+	ALIGN-ITEMS
+	Link align-itenms= https://www.w3schools.com/cssref/css3_pr_align-items.asp
+	Atributos align-items: stretch|center|flex-start|flex-end|baseline;
+	A propriedade  align-items: baseline;  alinha os itens na linha dos textos.
+
+
+FLEXBOX - ITEMS
+	A propriedade order: 1;  altera a ordem dos itens do flexbox. Todos os itens tem o valor padrão de 0.
+	
+	FLEX-GROW
+	A propriedade flex-grow: ;  define a proporção de espaço ocupado por um item do flexbox.
+	A propriedade flex-grow: 0; distribui os itens com a porcentagem disponivel na tela.
+	
+	FLEX-SHRINK
+	A propriedade flex-shrink: 1; define a capacidade de redução de um item no flexbox.
+	A propriedade flex-grow: 0; diminui os itens com a porcentagem disponivel na tela.
+	
+	FLEX-BASIS
+	A propriedade flex-basis: auto;  indica o tomamanho inicial do flex item antes da distribuição do espaço restante.
+	
+	Compatibilidade flexbox - https://caniuse.com/#search=flexbox
+	Correção Internet Explore  - https://github.com/jonathantneal/flexibility
+	Autoprefixo - https://autoprefixer.github.io/

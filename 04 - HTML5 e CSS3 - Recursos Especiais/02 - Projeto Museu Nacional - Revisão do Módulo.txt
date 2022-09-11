@@ -1,0 +1,138 @@
+HTML - CONFIGURAÇÕES HTML 5
+	Criar a tag <title>Museu Nacional</title>  para ti´tulo do site.
+	Criar a tag   <meta charset="utf-8"> no Head  abaixo do title.
+	Criar a referencia ao arquivo estilo.css na pasta css <link rel="stylesheet" type="text/css" href="css/estilo.css">
+	Baixar a vesão atualizada do normilize  https://necolas.github.io/normalize.css/
+	Criar a referencia ao arquivo normalize.css na pasta css   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	Configurar o HTML Shiv dentro do Head e colar o arquivo dentro da pasta js
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+	Tambem podemos configurar o htmlshiv com um link direto no src - Copiar o link min ná pagina do 	cdn  	https://cdnjs.com/libraries/html5shiv  e colar no src
+
+
+TOPO DO SITE ---------------------------------------------------------------------------------------------------------
+
+
+HTML - CONTAINER
+	Criar uma div com id="container" para configuração do container.
+	<div id="container">
+	</div>
+
+
+CSS - BODY
+	Configurar o body.
+	Configurar o backgroud que repete em x (horizontal):
+		background: #f4f2ec url(../img/fundo.png) repeat-x;
+	Configurar as fontes:
+		font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+
+
+CSS - LINKS DO SITE
+	a:link, a:active, a:visited{ }
+	Configurar a cor dos links:
+		color: af670a;
+	Retirar todas as formatações padrões dos links:
+		text-decoration: none;
+
+
+CSS - HOVER DOS LINKS
+	a:hover{ }
+	Configurar a cor do efeito hover:
+		color: #227115;
+
+
+CSS - CONTAINER
+	Configurar a largura padrão:
+		width: 1080px;
+	Centralizar o container:
+		margin: 0 auto;
+	
+
+
+HTML - HEADER - CABEÇALHO DO SITE
+	<header>
+	</header>
+	Dentro do header, vamos configurar o logo e o menu principal.
+	
+	LOGO
+	Criar uma div com id="logo", e dentro da div logo colocar criar um h1 e dentro do h1 configurar o titulo do site e um link <a> 			com a src da imagem do logo.
+	Configurar o link dentro da id logo no css.
+		#logo a{ }
+	Definir a largura do logo:
+		width: 248px;
+	Definir a altura do logo:
+		height: 21px;
+	Tirar o texto do h1 da area de visualização:
+		text-indent: -9999px;
+	Definir o logo como bloco:
+		display: block;
+	Criar o background com a url do logo e sem repetir:
+		background: url(../img/logo.png) no-repeat;
+
+
+HTML - NAV - MENU DE NAVEGAÇÃO PRINCIPAL
+	Criar a tag nav dentro do header
+	<nav>
+	</nav>
+	Dentro da nav, criar uma ul:
+		<ul></ul>
+		E dentro da ul, criar as li com os links <a href=""></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Exposições</a></li>
+				<li><a href="#">Pesquisa</a></li>
+				<li><a href="#">Arcevo</a></li>
+				<li><a href="#">Vídeos</a></li>
+				<li><a href="#">Fotos</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+
+
+CSS - HEADER
+	header{ }
+	Configurar um espaçamento interno top e bottom de 15 e nas laterais de 0px:
+		padding: 15px 0;
+	Definir uma altura pro header:
+		height: 55px;
+
+
+CSS - UL DENTRO DA NAV
+	nav ul{ }
+	Tirar todos os estilos padrão dos links dentro da lista:
+		list-style: none;
+	Criar uma margem externa:
+		margin: 20px;
+	Fazer a barra de navegação flutuar a direita:
+		float: right;
+
+
+CSS - LIs DA UL DENTRO DA NAV
+	nav ul li{  }
+	Fazer os itens da lista flutuarem a esquerda:
+		float: left;
+
+
+CSS - LINKS DENTRO DA NAV
+	nav ul li a:link{ }
+	Definir os links como bloco:
+		display: block;
+	Criar uma margem externa direita:
+		margin-right: 25px;
+	Criar um espaçamento interno inferior:
+		padding-bottom: 3px;
+	Deixar todos os textos com lestras maiusculas:
+		text-transform: uppercase;
+
+
+CSS - HOVER DOS LINKS DA NAV
+	nav ul li a:hover{ }
+	Criar efeito de borda inferior:
+		border-bottom: 1px solid #535858;
+
+
+CSS - LOGO - FLUTUAR PARA ESQUERDA
+	#logo h1{ }
+	Fazer o logo flutuar para a esquerda
+		float: left;
+	
